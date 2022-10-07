@@ -2,19 +2,14 @@
 import LoadingSpinner from "./LoadingSpinner.vue";
 
 export default {
+  components: {
+    LoadingSpinner,
+  },
   data: () => ({
     imageUrl: "https://via.placeholder.com/300",
     hasError: false,
     isLoading: false,
   }),
-
-  created() {
-    this.fetchData();
-  },
-
-  components: {
-    LoadingSpinner,
-  },
 
   methods: {
     async fetchData() {
@@ -31,6 +26,9 @@ export default {
         this.isLoading = false;
       }
     },
+  },
+  created() {
+    this.fetchData();
   },
 };
 </script>
