@@ -1,10 +1,11 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import DogImageCard from "./components/DogImageCard.vue";
 </script>
 
 <template>
-  <HelloWorld msg="Vite + Vue" />
+  <div class="grid place-items-center h-screen bg-cyan-50	">
+    <DogImageCard />
+  </div>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>
